@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MUSIC-PLAYER</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!---------------------------------- navigation bar----------------------------------- -->
+
+    <section id="basic">
+        <div class="item one">
+            <div class="left-side">
+                <div class="logo div-set">
+                    <i class="fab fa-studiovinari"></i>
+                </div>
+                <div id="title" class="div-set">
+                    <span style="font-family: sans-serif;">Ninja</span>
+                    <span style="font-family: Arial; font-weight: bold;">Studio</span>
+                </div>
+                <div id="favourites-tab" class="div-set">
+                    <p style="font-family: sans-serif;">Favourites</p>
+                </div>
+
+                 <div id="queue-tab" class="div-set">                  
+                      <a href="#queue-section">
+                           <button> <p style="font-family: sans-serif;">Queue <i class="fas fa-chevron-down"></i></p></button>
+                      </a>
+                </div>
+
+                 <div id="queue-tab" class="div-set">                  
+                      <a href="#main-section">
+                           <button> <p style="font-family: sans-serif;">Back</p></button>
+                      </a>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <div id="search-bar" class="div-set">
+                    <button><i class="fas fa-search"></i></button>
+                    <form>
+                        <input class="search" type="text" name="search" placeholder="Search" />
+                    </form>
+                    <button class="mic"><i class="fas fa-microphone"></i></button>
+                </div>
+                <div id="bell-icon" class="div-set">
+                    <i class="fas fa-bell"></i>
+                    <div id="dot"></div>
+                </div>
+                <div class="profile div-set"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-content">
+        <div id ="main-section" class="item two">
+
+
+ <!------------------------------------- posters----------------------------------- -->
+            <div class="posters">
+                <div class="poster">
+                    <img  src="images/poster1.jpeg" >
+                </div>
+                <div style="margin-left: 3%;" class="poster">
+                    <img  src="images/poster2.jpeg" >
+                </div>
+                <div style="margin-left: 3%;" class="poster">
+                    <img  src="images/poster3.jpeg" >
+                </div>
+            </div>
+
+<!------------------------------------- latest releases ------------------------------------->
+
+            <div class="latest-releases">
+                <p class="heading">
+                    Latest Releases
+                </p>
+
+                <div id="div1" class="song-content">
+                    <div class="image">
+                        <img class="pics" src="images/latestrel.jpg" >
+
+                        <button class="play-icon">
+                <i class="fas fa-play" id="iconsWhatever1" onclick="changeIcon(id)" ></i>
+              </button>
+
+                       
+
+
+                    </div>
+
+                    <div class="content">
+                        <span style="font-family: sans-serif; font-weight: bold;">Onism
+              </span>
+                        <span style="font-family: sans-serif;">AUG 11, 2017</span>
+                    </div>
+
+                    <div class="side-pane">
+                        <div class="dropdown-menu">
+                            <button class="dropbutton">
+                  <span><i class="fas fa-ellipsis-h"></i></span>
+                  <div class="menu font-size">
+                    <ul type="none">
+                      <li><i class="fas fa-play"></i> Play Now</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-plus"></i> Add To Queue</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-bookmark"></i> Add To favourites</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-info-circle"></i> Get Info</li>
+                    </ul>
+                  </div>
+
+                  <div style="color: white;">4.44</div>
+                </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div2" class="song-content">
+                    <div class="image">
+                        <img class="pics" src="images/latestrel.jpg" />
+                        <button class="play-icon">
+                <i class="fas fa-play"  id="iconsWhatever2" onclick="changeIcon(id)" ></i>
+              </button>
+
+                    </div>
+
+                    <div class="content">
+                        <span style="font-family: sans-serif; font-weight: bold;">Onism
+              </span>
+                        <span style="font-family: sans-serif;">AUG 11, 2017</span>
+                    </div>
+
+                    <div class="side-pane">
+                        <div class="dropdown-menu">
+                            <button class="dropbutton">
+                  <span><i class="fas fa-ellipsis-h"></i></span>
+                  <div class="menu font-size">
+                    <ul type="none">
+                      <li><i class="fas fa-play"></i> Play Now</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-plus"></i> Add To Queue</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-bookmark"></i> Add To favourites</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-info-circle"></i> Get Info</li>
+                    </ul>
+                  </div>
+
+                  <div style="color: white;">4.44</div>
+                </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div3" class="song-content">
+                    <div class="image">
+                        <img class="pics" src="images/latestrel.jpg" />
+
+                       <button class="play-icon">
+                <i class="fas fa-play"  id="iconsWhatever3" onclick="changeIcon(id)" ></i>
+              </button>
+                    </div>
+
+                    <div class="content">
+                        <span style="font-family: sans-serif; font-weight: bold;">Onism
+              </span>
+                        <span style="font-family: sans-serif;">AUG 11, 2017</span>
+                    </div>
+
+                    <div class="side-pane">
+                        <div class="dropdown-menu">
+                            <button class="dropbutton">
+                  <span><i class="fas fa-ellipsis-h"></i></span>
+                  <div class="menu font-size">
+                    <ul type="none">
+                      <li><i class="fas fa-play"></i> Play Now</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-plus"></i> Add To Queue</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-bookmark"></i> Add To favourites</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-info-circle"></i> Get Info</li>
+                    </ul>
+                  </div>
+
+                  <div style="color: white;">4.44</div>
+                </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div4" class="song-content">
+                    <div class="image">
+                        <img class="pics" src="images/latestrel.jpg" />
+
+                       <button class="play-icon">
+                <i class="fas fa-play"  id="iconsWhatever4" onclick="changeIcon(id)" ></i>
+              </button>
+                    </div>
+
+                    <div class="content">
+                        <span style="font-family: sans-serif; font-weight: bold;">Onism
+              </span>
+                        <span style="font-family: sans-serif;">AUG 11, 2017</span>
+                    </div>
+
+                    <div class="side-pane">
+                        <div class="dropdown-menu">
+                            <button class="dropbutton">
+                  <span><i class="fas fa-ellipsis-h"></i></span>
+                  <div class="menu font-size">
+                    <ul type="none">
+                      <li><i class="fas fa-play"></i> Play Now</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-plus"></i> Add To Queue</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-bookmark"></i> Add To favourites</li>
+
+                      <hr />
+
+                      <li><i class="fas fa-info-circle"></i> Get Info</li>
+                    </ul>
+                  </div>
+
+                  <div style="color: white;">4.44</div>
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <!-------------------------------------popular artists ------------------------------------->
+
+            <div class="popular-artist">
+                <p class="heading">
+                    Popular Artists
+                </p>
+
+                <div class="artist-sec">
+                    <div class="artist-div">
+                        <img src="images/artist1.jpg" />
+                        <a href="artist-page.htm">
+                            <button class="artist-page">
+                  <i class="fas fa-play"></i>
+                </button>
+                        </a>
+                        <p>Ed Sheeran</p>
+                    </div>
+
+                    <div class="artist-div">
+                        <img src="images/artist2.jpg" />
+                        <a href="artist-page.htm">
+                            <button class="artist-page">
+                  <i class="fas fa-play" id="iconsWhatever5" onclick="changeIcon(id)"></i>
+                </button>
+                        </a>
+                        <p>ColdPlay</p>
+                    </div>
+
+                    <div class="artist-div">
+                        <img src="images/artist3.jpg" />
+                        <a href="artist-page.htm">
+                            <button class="artist-page">
+                  <i class="fas fa-play" id="iconsWhatever6" onclick="changeIcon(id)"></i>
+                </button>
+                        </a>
+                        <p>Zayn</p>
+                    </div>
+
+                    <div class="artist-div">
+                        <img src="images/artist4.jpg" />
+                        <a href="artist-page.htm">
+                            <button class="artist-page">
+                  <i class="fas fa-play"></i>
+                </button>
+                        </a>
+                        <p>Charlie Puth</p>
+                    </div>
+
+                    <div class="artist-div">
+                        <img src="images/artist6.jpg" />
+                        <a href="artist-page.htm">
+                            <button class="artist-page">
+                  <i class="fas fa-play"></i>
+                </button>
+                        </a>
+                        <p>Bruno Mars</p>
+                    </div>
+
+                    <div class="artist-div">
+                        <img src="images/artist7.jpg" />
+                        <a href="artist-page.htm">
+                            <button class="artist-page">
+                  <i class="fas fa-play"></i>
+                </button>
+                        </a>
+                        <p>Alan Walker</p>
+                    </div>
+                </div>
+            </div>
+
+<!------------------------------------- stations ------------------------------------->
+
+            <div id="stations">
+                        <div class="station" style="background-image: url(images/stationlogo.jpg);">
+                        </div>                   
+                        <div class="station" style="background-image: url(images/love.jpg);">
+                            <p>Love</p>
+                        </div>
+                        <div class="station" style="background-image: url(images/retro.jpg);">
+                            <p>Retro</p>
+                        </div>
+                        <div class="station" style="background-image: url(images/chill.jpg);">
+                            <p>Chill</p>
+                        </div>
+
+                        <div class="station" style="background-image: url(images/pop.jpg);">
+                            <p>Pop</p>
+                        </div>
+                        <div class="station" style="background-image: url(images/rock.jpg);">
+                            <p>Rock</p>
+                        </div>
+            </div>
+
+            <div id="panel">
+                <div class="comp">
+                    <img class="bgs" src="images/party.jpg" />
+                    <p style="left: 30%;" class="text">Party</p>
+                </div>
+                <div class="comp">
+                    <img class="bgs" src="images/electronic.jpg" />
+                    <p class="text">Electronic</p>
+                </div>
+                <div class="comp">
+                    <img class="bgs" src="images/roadtrip.jpg" />
+                    <p class="text">Road Trip</p>
+                </div>
+            </div>
+
+            <!-- latest english -->
+            <div class="popular-artist latest-english">
+                <p class="heading">
+                    Latest English
+                </p>
+
+                <div class="english-playlist">
+                    <div style="margin-left: 0%;" class="border-radius">
+                        <img src="images/qu1.jpg" />
+                        <p>
+                            <span class="onism">Onism</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu2.jpg" />
+                        <p>
+                            <span class="onism">New Skin</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu3.png" />
+                        <p>
+                            <span class="onism">Fade Away</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu1.jpg" />
+                        <p>
+                            <span class="onism">Mirage</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu2.jpg" />
+                        <p>
+                            <span class="onism">Gone</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu3.png" />
+                        <p>
+                            <span class="onism">Black</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+ <!------------------------------------- latest hindi ------------------------------------->
+
+            <div class="popular-artist latest-english">
+                <p class="heading">
+                    Latest Hindi
+                </p>
+
+                <div class="english-playlist">
+                    <div style="margin-left: 0%;" class="border-radius">
+                        <img src="images/qu5.jpg" />
+                        <p>
+                            <span class="onism">Illahi</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu6.jpg" />
+                        <p>
+                            <span class="onism">Bang Bang</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu7.jpeg" />
+                        <p>
+                            <span class="onism">Phir Kabhi</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu9.jpg" />
+                        <p>
+                            <span class="onism">Bala</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu10.jpg" />
+                        <p>
+                            <span class="onism">Sher Aya</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <div class="border-radius">
+                        <img src="images/qu11.jpg" />
+                        <p>
+                            <span class="onism">Khariyat</span> <br /> AUG 11, 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!------------------------------------- queue section ------------------------------------->
+
+        <div id = "queue-section" class="item three">
+            <div class="aside">
+                <div class="heading">
+                    <div class="main-head">Queue</div>
+                    <div class="drop-menu">
+                        <button class="dropbutton">
+                <span>Queue <i class="fas fa-chevron-down"></i></span>
+                <div class="menu">
+                  <ul type="none">
+                    <li>Playlists</li>
+                    <hr />
+                    <li>Favourite Songs</li>
+                  </ul>
+                </div>
+              </button>
+                    </div>
+                </div>
+
+                <div class="queue-content">
+                    <ol type="01." class="queue">
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu2.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Mirage
+                    </span>
+                                    <span style="font-family: sans-serif;">Else</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu3.png" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">New Skin
+                    </span>
+                                    <span style="font-family: sans-serif;">Flume</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu5.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Illahi
+                    </span>
+                                    <span style="font-family: sans-serif;">Darshan</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu1.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Worry Bout Us
+                    </span>
+                                    <span style="font-family: sans-serif;">Rosie Lowe</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu6.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Bang Bang
+                    </span>
+                                    <span style="font-family: sans-serif;">Benny Dayal</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/poster2.jpeg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Script
+                    </span>
+                                    <span style="font-family: sans-serif;">Rosie Lowe</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu4.png" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Closer
+                    </span>
+                                    <span style="font-family: sans-serif;">Chainsmoker</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu7.jpeg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Phir Kabhi
+                    </span>
+                                    <span style="font-family: sans-serif;">Atif</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu8.jpeg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Bekhayali
+                    </span>
+                                    <span style="font-family: sans-serif;">Arijit Singh</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu8.jpeg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Kaise Hua
+                    </span>
+                                    <span style="font-family: sans-serif;">Arijit Singh</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu9.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Bala
+                    </span>
+                                    <span style="font-family: sans-serif;">Rosie Lowe</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu10.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Bhag Sher
+                    </span>
+                                    <span style="font-family: sans-serif;">Sher Khan</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu10.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Apna Time Aayega
+                    </span>
+                                    <span style="font-family: sans-serif;">Ranveer Singh</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu1.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Worry Bout Us
+                    </span>
+                                    <span style="font-family: sans-serif;">Rosie Lowe</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu15.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Aal Is Well
+                    </span>
+                                    <span style="font-family: sans-serif;">Sonu Nigam</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu14.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">440 Volt
+                    </span>
+                                    <span style="font-family: sans-serif;">Mika Singh</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu1.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Worry Bout Us
+                    </span>
+                                    <span style="font-family: sans-serif;">Rosie Lowe</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu13.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Chashni
+                    </span>
+                                    <span style="font-family: sans-serif;">Abhijeet</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu14.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Jag Ghoomeya
+                    </span>
+                                    <span style="font-family: sans-serif;">Rahat Fateh Ali</span
+                    >
+                  </div>
+
+                  <div class="heart">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="playlist">
+                  <div class="cover">
+                    <img class="cover-image" src="images/qu13.jpg" />
+                  </div>
+                  <div class="name">
+                    <span style="font-family: sans-serif; font-weight: bold;"
+                      >Slow Motion
+                    </span>
+                                    <span style="font-family: sans-serif;">Shreya Ghoshal</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu12.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Om Shanti Om
+                    </span>
+                                    <span style="font-family: sans-serif;">various</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu11.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Khariyat
+                    </span>
+                                    <span style="font-family: sans-serif;">Arijit Singh</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu12.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Om Shanti Om
+                    </span>
+                                    <span style="font-family: sans-serif;">various</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu2.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Mirage
+                    </span>
+                                    <span style="font-family: sans-serif;">Else</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu3.png" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">New Skin
+                    </span>
+                                    <span style="font-family: sans-serif;">Flume</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="playlist">
+                                <div class="cover">
+                                    <img class="cover-image" src="images/qu5.jpg" />
+                                </div>
+                                <div class="name">
+                                    <span style="font-family: sans-serif; font-weight: bold;">Illahi
+                    </span>
+                                    <span style="font-family: sans-serif;">Darshan</span>
+                                </div>
+
+                                <div class="heart">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------- play-bar ------------------------------------->
+    
+           <div id="play-bar">
+                <div class="bar-image "></div>
+                <div class="bar-name">
+                <p>Imagine By John &nbsp; <i class="far fa-heart"></i> &nbsp;<i class="fas fa-ban"></i>
+                </p>
+                      <span>John Lennon</span>
+
+                </div>
+                <div class="bar-slider">
+                   <p><i class="fas fa-sync"></i> <i class="fas fa-step-backward"></i> <i class="far fa-pause-circle"></i> <i class="fas fa-step-forward"></i> <i class="fas fa-redo"></i></p>
+                   1:39 <input id="slider" type="range"> 4:44
+                </div>
+
+                 <div class="bar-right">
+                      <i class="fas fa-list"></i> <i class="fas fa-desktop"></i> <i class="fas fa-volume-up"></i> <input id="slider-two" type="range" name="">
+                 </div>
+            </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
