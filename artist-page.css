@@ -490,7 +490,7 @@ button:focus
     height: 106px;
     width: 100%;
     position: fixed;
-    top: 85%;
+    bottom:0;
     left: 0;
     background-color: #2d2929;
 
