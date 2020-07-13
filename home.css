@@ -881,10 +881,10 @@ button:focus
 		display: none;
 	}
 
-	.three:target
+    .three:target
     {
     display: block;
-    width: 100%;
+    width: 94%;
     height: auto;
     z-index: 2;
     background-color: #090921;
@@ -892,6 +892,10 @@ button:focus
     top: 90px;
     left: 37px;
     }
+
+    .heart {
+    left: 73%;
+     }
 }
 
 @media screen and (max-width: 900px)
