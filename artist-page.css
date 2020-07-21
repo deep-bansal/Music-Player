@@ -280,6 +280,7 @@ button:focus
 	margin-top: 20px;
 }
 
+
 .hearts
 {
 	font-size: 1.8rem;
@@ -297,7 +298,10 @@ button:focus
 	border-radius: 15px; 
 	height: 75px;
 }
-
+#artist-playlist> div:hover
+{
+	background-color: black;
+}
 
 /*********************queue-section*******************************/
 
