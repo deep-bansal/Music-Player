@@ -673,9 +673,10 @@ button:focus
 
 @media screen and (max-width: 640px)
 {
-	#singer
+	
+	 #main-content
 	{
-		height: 314px;
+		width: 550px;
 	}
 
 }
